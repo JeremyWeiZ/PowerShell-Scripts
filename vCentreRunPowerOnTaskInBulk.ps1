@@ -51,5 +51,5 @@ Import-Csv -Path $csvPath | ForEach-Object {
 }
 
 # Disconnect from vCenter
-Disconnect-VIServer -Server hc-vc.horizoncloud.local -Confirm:$false -ErrorAction SilentlyContinue
-LogWrite Disconnected from vCenter hc-vc.horizoncloud.local
+Disconnect-VIServer -Server YOURHOSTNAME -Confirm:$false -ErrorAction SilentlyContinue
+LogWrite Disconnected from vCenter YOURHOSTNAME
